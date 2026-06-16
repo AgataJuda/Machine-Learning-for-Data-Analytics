@@ -1,0 +1,23 @@
+artifact_path: file:///c:/Users/Ala/Documents/STUDIA/sem_1/Machine-Learning-for-Data-Analytics/notebooks/mlruns/3/models/m-f8732defb5ac4504b48bc5a433568bb1/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.13.0
+model_id: m-f8732defb5ac4504b48bc5a433568bb1
+model_size_bytes: 271730
+model_uuid: m-f8732defb5ac4504b48bc5a433568bb1
+prompts: null
+run_id: ac273481cfb94e50aeaf6d7607ca4eff
+utc_time_created: '2026-06-13 12:22:59.288519'

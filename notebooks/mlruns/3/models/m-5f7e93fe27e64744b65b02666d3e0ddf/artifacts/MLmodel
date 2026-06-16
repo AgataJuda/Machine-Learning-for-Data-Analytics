@@ -1,0 +1,22 @@
+artifact_path: file:///c:/Users/Ala/Documents/STUDIA/sem_1/Machine-Learning-for-Data-Analytics/notebooks/mlruns/3/models/m-5f7e93fe27e64744b65b02666d3e0ddf/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.11.7
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 3.13.0
+model_id: m-5f7e93fe27e64744b65b02666d3e0ddf
+model_size_bytes: 283368
+model_uuid: m-5f7e93fe27e64744b65b02666d3e0ddf
+prompts: null
+run_id: 44821996713e41f894ff033a3ea2fef4
+utc_time_created: '2026-06-13 17:58:40.785564'

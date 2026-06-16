@@ -1,0 +1,51 @@
+artifact_path: file:///c:/Users/Ala/Documents/STUDIA/sem_1/Machine-Learning-for-Data-Analytics/notebooks/mlruns/1/models/m-ffc16aeab79e453a97f42eedde7238c2/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.13.0
+model_id: m-ffc16aeab79e453a97f42eedde7238c2
+model_size_bytes: 8087807
+model_uuid: m-ffc16aeab79e453a97f42eedde7238c2
+prompts: null
+run_id: 8484a457df204ae3b439177d2d15328f
+signature:
+  inputs: '[{"type": "long", "name": "Timestamp", "required": true}, {"type": "double",
+    "name": "Open", "required": true}, {"type": "double", "name": "High", "required":
+    true}, {"type": "double", "name": "Low", "required": true}, {"type": "double",
+    "name": "Volume", "required": true}, {"type": "double", "name": "log_return",
+    "required": true}, {"type": "double", "name": "log_return_lag_1", "required":
+    true}, {"type": "double", "name": "log_return_lag_2", "required": true}, {"type":
+    "double", "name": "log_return_lag_3", "required": true}, {"type": "double", "name":
+    "log_return_lag_4", "required": true}, {"type": "double", "name": "log_return_lag_5",
+    "required": true}, {"type": "double", "name": "log_return_lag_6", "required":
+    true}, {"type": "double", "name": "log_return_lag_7", "required": true}, {"type":
+    "double", "name": "log_return_lag_8", "required": true}, {"type": "double", "name":
+    "log_return_lag_9", "required": true}, {"type": "double", "name": "log_return_lag_10",
+    "required": true}, {"type": "double", "name": "roll_mean_3", "required": true},
+    {"type": "double", "name": "roll_std_3", "required": true}, {"type": "double",
+    "name": "abs_roll_mean_3", "required": true}, {"type": "double", "name": "roll_mean_7",
+    "required": true}, {"type": "double", "name": "roll_std_7", "required": true},
+    {"type": "double", "name": "abs_roll_mean_7", "required": true}, {"type": "double",
+    "name": "roll_mean_14", "required": true}, {"type": "double", "name": "roll_std_14",
+    "required": true}, {"type": "double", "name": "abs_roll_mean_14", "required":
+    true}, {"type": "double", "name": "momentum_3", "required": true}, {"type": "double",
+    "name": "momentum_7", "required": true}, {"type": "double", "name": "momentum_14",
+    "required": true}, {"type": "double", "name": "abs_log_return", "required": true},
+    {"type": "double", "name": "sq_log_return", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-06-13 18:24:07.889341'

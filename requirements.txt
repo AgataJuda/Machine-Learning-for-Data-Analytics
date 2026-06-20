@@ -1,4 +1,3 @@
-All libraries you need to download:
 pandas
 numpy
 matplotlib

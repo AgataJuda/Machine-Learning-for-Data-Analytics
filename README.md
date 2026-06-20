@@ -6,16 +6,16 @@ recent market history?** We frame it as binary classification (will the next hou
 log-return be positive?) and, as a second objective, train reinforcement-learning
 agents to turn any signal into a simple long/flat trading policy.
 
-The project deliberately spans several course modules — classical time series,
+The project deliberately spans several course modules - classical time series,
 tree ensembles, deep learning, reinforcement learning, uncertainty quantification,
-and interpretability — wrapped in a reproducible MLflow-tracked pipeline.
+and interpretability - wrapped in a reproducible MLflow-tracked pipeline.
 
 ## Key result
 
 After testing classical, tree-based, deep-learning and reinforcement-learning
 methods, we find **no reliable directional edge at the hourly horizon**: the best
-classifier (Random Forest) reaches only **0.527 ROC-AUC** — barely above the
-stratified baseline (0.519) — the forecasters score **below 50%** on direction, and
+classifier (Random Forest) reaches only **0.527 ROC-AUC** - barely above the
+stratified baseline (0.519) - the forecasters score **below 50%** on direction, and
 **no trading strategy beats Buy & Hold on a risk-adjusted basis**. This is consistent
 with a near-efficient market and is a credible, well-supported finding rather than a
 failure. The deliverable is that honest result *plus* a fully reproducible pipeline.
@@ -25,7 +25,6 @@ failure. The deliverable is that honest result *plus* a fully reproducible pipel
 ```
 .
 ├── data/
-│   ├── raw/              # original data (downloaded via kagglehub, git-ignored)
 │   └── processed/        # train/val/test CSVs + metadata.json (produced by NB 01)
 ├── notebooks/
 │   ├── 01_data_processing.ipynb
@@ -36,7 +35,7 @@ failure. The deliverable is that honest result *plus* a fully reproducible pipel
 ├── models/              # trained models saved as plain files (produced by NB 03)
 ├── mlruns/              # MLflow tracking store (SQLite + artifacts)
 ├── reports/             # exported tables, figures, presentation.pdf
-├── requirements.txt
+├── requirements.txt     # all libraries needed for code to work
 └── README.md
 ```
 
@@ -44,7 +43,7 @@ failure. The deliverable is that honest result *plus* a fully reproducible pipel
 
 Kaggle's minute-level **BTC/USD** history
 ([`mczielinski/bitcoin-historical-data`](https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data)),
-downloaded automatically by notebook 01 via `kagglehub` — no manual download needed.
+downloaded automatically by notebook 01 via `kagglehub` - no manual download needed.
 We restrict to the full year **2025**, resample to **hourly** bars (8,760 hours), and
 engineer 25 leakage-free features (lagged returns, rolling statistics, momentum,
 volatility proxies). The raw file is large and is **not** committed to the repo.

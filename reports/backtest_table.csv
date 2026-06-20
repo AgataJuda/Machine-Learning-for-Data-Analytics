@@ -1,0 +1,4 @@
+Strategy,Total return %,Sharpe,Max drawdown %,Win rate %
+Buy & Hold,-14.188,-2.138,-23.004,50.65
+PPO agent,-16.506,-3.103,-21.757,51.72
+XGBoost signal,-22.176,-4.22,-30.018,50.526

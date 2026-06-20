@@ -77,7 +77,7 @@ paths are relative, e.g. `../data`, `../models`):
 
 | # | Notebook | What it does |
 |---|----------|--------------|
-| 01 | `01_data_processing.ipynb` | download, validate, stationarity investigation, feature engineering, chronological split → writes `data/processed/` |
+| 01 | `01_data_processing.ipynb` | download, validate, stationarity investigation, feature engineering, chronological split -> writes `data/processed/` |
 | 02 | `02_eda.ipynb` | distributions, volatility, autocorrelation, stationarity, correlations |
 | 03 | `03_modelling.ipynb` | trains **and saves** all models to `models/`; logs runs to MLflow |
 | 04 | `04_analysis.ipynb` | evaluation, SHAP, MC-Dropout uncertainty, backtest; exports result tables |

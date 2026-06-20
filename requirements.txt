@@ -1,6 +1,19 @@
 All libraries you need to download:
-prophet
-kagglehub
-os
-sklearn
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
 statsmodels
+xgboost
+tensorflow
+arch
+prophet
+gymnasium
+stable-baselines3
+shap
+mlflow
+kagglehub
+scikeras
+jupyter

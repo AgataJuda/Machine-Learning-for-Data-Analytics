@@ -1,0 +1,13 @@
+{
+  "lstm_features": [
+    "log_return",
+    "abs_log_return",
+    "roll_mean_3",
+    "roll_std_3",
+    "roll_mean_7",
+    "roll_std_7",
+    "momentum_3",
+    "momentum_7"
+  ],
+  "seq_len": 20
+}
